@@ -1,0 +1,27 @@
+---
+# [Host Settings]
+vmhost_node: 'vmhost01'
+vmhost_hostname: 'vmhost01'
+vmhost_username: 'root@pam'
+vmhost_password: "{{ pxmx_pass }}"
+# [VM Settings]
+build_type: 'ct'
+package_manager: 'dnf'
+build_hostname: 'ruby.cry0.net'
+ct_template: 'local:vztmpl/centos-8-default_20191016_amd64.tar.xz'
+vm_storage: 'vm-os'
+default_cipassword: "{{ ct_pass }}"
+default_sshkey: 'default_rsa.pub'
+vm_ip: '192.168.86.201'
+vm_subnet: '/24'
+vm_gateway: '192.168.86.1'
+vm_dns: '192.168.86.100'
+vm_memory: '4096'
+vm_cores: 2
+vm_nesting: no
+# [Software Load]
+default_roles: 
+  - 'ruby'
+  - 'git'
+  - 'ruby-test'
+...
