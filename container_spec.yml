@@ -24,4 +24,5 @@ default_roles:
   - 'ruby'
   - 'git'
   - 'ruby-test'
+  - 'rspec'
 ...
