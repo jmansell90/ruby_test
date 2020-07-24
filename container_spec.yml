@@ -23,6 +23,6 @@ vm_nesting: no
 default_roles: 
   - 'ruby'
   - 'git'
-  - 'ruby-test'
   - 'rspec'
+  - 'ruby-test'
 ...

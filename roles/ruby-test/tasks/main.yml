@@ -1,0 +1,22 @@
+---
+# tasks file for ruby-test
+- name: Download ruby-test
+  git:
+    repo: 'https://github.com/jmansell90/ruby_test.git'
+    dest: '~/ruby-test'
+
+- name: Create Test Results Folder
+  file:
+    path: ~/ruby-test/test_results
+    state: directory
+
+- name: Test ruby-test
+  shell: rspec spec ~/ruby-test/spec/math_class_spec.rb > ~/ruby-test/test_results/rspec_results-$(date +"%Y-%m-%d_%H-%M-%S")
+
+- name: Upload Results To Git
+  git:
+    comment: "Test Results for {{ ansible_date_time.date }} - {{ ansible_date_time.time }}"
+    path: ~/ruby-test
+    add: [ "." ]
+    mode: https
+    url: 'https://github.com/jmansell90/ruby_test.git'
