@@ -10,6 +10,7 @@ describe ".sum" do
             expect(MatchClass.sum(24, 15)).to eql(39)
         end
     end
+end
 describe ".diff" do
     context "given 17, 12" do
         it "returns 5" do
