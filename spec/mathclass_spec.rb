@@ -1,4 +1,4 @@
-require "MathClass"
+require "lib/mathclass.rb"
 describe ".sum" do
     context "given 2, 6" do
         it "returns 8" do
