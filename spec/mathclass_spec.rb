@@ -1,5 +1,5 @@
 require 'mathclass.rb'
-describe ".sum" do
+describe ".add" do
     mathclass = MathClass.new
     context "given 2, 6" do
         it "returns 8" do
