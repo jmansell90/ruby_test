@@ -1,4 +1,4 @@
-#!/usr/local/bin/ruby
+#!/usr/bin/ruby
 #MathClass ruby test to test sum and difference between two numbers
 class MathClass
     #Class to add two numbers
