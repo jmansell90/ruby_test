@@ -2,16 +2,16 @@
 # [Host Settings]
 vmhost_node: 'vmhost01'
 vmhost_hostname: 'vmhost01'
-vmhost_username: 'root@pam'
-vmhost_password: "{{ pxmx_pass }}"
+vmhost_username: '{{ vmhost_user }}'
+vmhost_password: '{{ vmhost_pass }}'
 # [VM Settings]
 build_type: 'ct'
 package_manager: 'dnf'
 build_hostname: 'ruby.cry0.net'
-ct_template: 'local:vztmpl/centos-8-default_20191016_amd64.tar.xz'
+ct_template: 'local:vztmpl/centos-7-default_20191016_amd64.tar.xz'
 vm_storage: 'vm-os'
-default_cipassword: "{{ ct_pass }}"
-default_sshkey: 'default_rsa.pub'
+default_cipassword: '{{ cl_pass }}'
+default_sshkey: '{{ cl_key }}'
 vm_ip: '192.168.86.201'
 vm_subnet: '/24'
 vm_gateway: '192.168.86.1'
