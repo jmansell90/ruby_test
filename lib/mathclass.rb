@@ -1,21 +1,21 @@
 #!/usr/bin/ruby
 #MathClass ruby test to test sum and difference between two numbers
 class MathClass
-    @@num1
-    @@num2
+    cnum1
+    cnum2
 
     def initialize(num1, num2)
-        @@num1 = num1
-        @@num2 = num2
+        cnum1 = num1
+        cnum2 = num2
     end
 
     #Class to add two numbers
     def sum
-        return @@num1+@@num2
+        return cnum1+cnum2
     end
 
     #Class to set diff between numbers
     def diff
-        return (@@num1-@@num2).abs
+        return (cnum1-cnum2).abs
     end
 end
