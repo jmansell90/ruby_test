@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 #MathClass ruby test to test sum and difference between two numbers
 class MathClass
+    #Class to initialize with two numbers
     def initialize(num1, num2)
         @num1 = num1
         @num2 = num2
