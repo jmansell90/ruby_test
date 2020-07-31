@@ -10,7 +10,7 @@ class MathClass
     end
 
     #Class to add two numbers
-    def add
+    def sum
         return @@num1+@@num2
     end
 
