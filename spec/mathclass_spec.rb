@@ -1,27 +1,27 @@
 require 'mathclass.rb'
-describe ".add" do
-    mathclass = MathClass.new
-    context "given 2, 6" do
+describe "2 and 6" do
+    mathclass = MathClass.new(2, 6)
+    context "Adding 2 and 6" do
         it "returns 8" do
-            expect(mathclass.add(2, 6)).to eql(8)
+            expect(mathclass.add.to eql(8)
         end
     end
-    context "given 24, 15" do
-        it "returns 39" do
-            expect(mathclass.add(24, 15)).to eql(39)
+    context "Difference between 2 and 6" do
+        it "returns 4" do
+            expect(mathclass.diff.to eql(4)
         end
     end
 end
 describe ".diff" do
-    mathclass = MathClass.new
-    context "given 17, 12" do
-        it "returns 5" do
-            expect(mathclass.diff(17, 12)).to eql(5)
+    mathclass = MathClass.new(23,86)
+    context "adding 23 and 86" do
+        it "returns 109" do
+            expect(mathclass.add.to eql(109)
         end
     end
-    context "given 23, 86" do
+    context "Difference between 23 and 86" do
         it "returns 63" do
-            expect(mathclass.diff(23, 86)).to eql(63)
+            expect(mathclass.diff.to eql(63)
         end
     end
 end
