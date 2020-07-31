@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 #MathClass ruby test to test sum and difference between two numbers
 class MathClass
-    cnum1
-    cnum2
+    cnum1 = 0
+    cnum2 = 0
 
     def initialize(num1, num2)
         cnum1 = num1
