@@ -12,7 +12,7 @@ describe "2 and 6" do
         end
     end
 end
-describe ".diff" do
+describe "23 and 86" do
     mathclass = MathClass.new(23,86)
     context "adding 23 and 86" do
         it "returns 109" do
